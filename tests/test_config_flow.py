@@ -11,13 +11,16 @@ from homeassistant.core import HomeAssistant
 from homeassistant.data_entry_flow import FlowResultType
 
 from custom_components.frank_energie.const import (
-    CONF_ACCESS_TOKEN,
-    CONF_PASSWORD,
     CONF_REFRESH_TOKEN,
     CONF_SITE,
+    DOMAIN
+)
+
+from homeassistant.const import (
+    CONF_ACCESS_TOKEN,
+    CONF_PASSWORD,
     CONF_TOKEN,
     CONF_USERNAME,
-    DOMAIN,
 )
 
 pytestmark = pytest.mark.usefixtures("mock_setup_entry", "mock_setup_entry_success")
